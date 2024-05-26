@@ -1,0 +1,205 @@
+*{
+    box-sizing: border-box;
+    color: #513429;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    margin: 0;
+}
+
+.fsP{
+    font-size: calc(15px + 0.390625vw)
+}
+.secH{
+
+    font-size: calc(28px + 1vw);
+    font-weight: 800;
+}
+
+.h1{
+    font-weight: 700;
+    font-size:min(calc(30px + 2vw),69px);
+    line-height: 1.1;
+    color: white;
+    text-shadow: 2px 4px 10px black;
+}
+section a{
+    color: #3e2a23;
+    font-weight: 600;
+    font-size: calc(16px + 0.390625vw)
+
+}
+.parallax-stage{
+  height: calc(100vh); /* Adjust height as needed */
+  position: relative;
+  overflow: hidden;
+}
+.title{
+  z-index: 1;
+  
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #f6f6f6ba !important;
+    z-index: 2;
+    padding: 0;
+}
+.navbar .navbar-brand{
+    width: 6rem;
+}
+.nav-link{
+    font-size: 1.6rem;
+}
+
+.hie{
+    height: 100%;
+}
+.parallax-items{
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: translate3d(0, 0, 0); /* Enables hardware acceleration */
+}
+.parallax-items:not(.parallax6){
+    height: 130%;
+}
+
+.parallax1{
+  background-image: url('../image/bannerpart5.jpg');
+   /* Adjust background properties as needed */
+    /* Move the background slower */
+    animation: parallax1 20s linear infinite;
+}
+
+
+@keyframes parallax1 {
+  0% {
+      transform: translate3d(0, 0, 0);
+  }
+  50% {
+      transform: translate3d(0, -80px, 0);
+  }
+  100% {
+      transform: translate3d(0, 0, 0);
+  }
+}
+
+.parallax2{
+  background-image: url('../image/bannerpart4.png');
+   /* Adjust background properties as needed */
+    /* Move the background slower */
+    animation: parallax2 20s linear infinite;
+}
+
+
+@keyframes parallax2 {
+  0% {
+      transform: translate3d(0, 0, 0);
+  }
+  50% {
+      transform: translate3d(0, -90px, 0);
+  }
+  100% {
+      transform: translate3d(0, 0, 0);
+  }
+}
+
+.parallax3{
+  background-image: url('../image/bannerpart3.png');
+   /* Adjust background properties as needed */
+    /* Move the background slower */
+    animation: parallax3 20s linear infinite;
+}
+
+
+@keyframes parallax3 {
+  0% {
+      transform: translate3d(0, 0, 0);
+  }
+  50% {
+      transform: translate3d(0, -115px, 0);
+  }
+  100% {
+      transform: translate3d(0, 0, 0);
+  }
+}
+
+.parallax4{
+  background-image: url('../image/bannerpart2.png');
+   /* Adjust background properties as needed */
+    /* Move the background slower */
+    animation: parallax4 20s linear infinite;
+}
+
+
+@keyframes parallax4 {
+  0% {
+      transform: translate3d(0, 50px, 0);
+  }
+  50% {
+      transform: translate3d(0, -60px, 0);
+  }
+  100% {
+      transform: translate3d(0, 50px, 0);
+  }
+}
+
+.parallax5{
+  background-image: url('../image/bannerpart1.png');
+   /* Adjust background properties as needed */
+    /* Move the background slower */
+    animation: parallax5 20s linear infinite;
+  
+}
+
+
+@keyframes parallax5 {
+  0% {
+      transform: translate3d(0, 0, 0);
+  }
+  50% {
+      transform: translate3d(0, -120px, 0);
+  }
+  100% {
+      transform: translate3d(0, 0, 0);
+  }
+}
+
+.section1 .d-flex{
+    background-image: url('../image/sectionpart1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section2 .col-md-5{
+    background-image: url('../image/sectionpart2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section3 .d-flex{
+    background-image: url('../image/sectionpart3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@media (max-width: 767.98px) { 
+    .section1 .d-flex{
+        background-image: none;
+    }
+    .section2 .col-md-5{
+        background-image:none;
+    }
+    .section3 .d-flex{
+        background-image: none;
+    }
+ }
